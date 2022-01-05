@@ -20,9 +20,54 @@
      
    <main class="wrapper">
     <form method="get" action="">
-        <p>First Name <br />
-        <input type=>
-        </p>
+        <!--Creates required First Name textbox. The autofocus places the cursor/line onto this box right when the user opens this page-->
+        <div>
+            <label for="FirstName">First Name</label>: <br />
+             <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required="required" title="First Name is a required field" autofocus />
+        </div>
+
+        <!--Creates required Last Name textbox-->
+        <div>
+            <label for="LastName">Last Name</label>: <br />
+             <input type="text" name="LastName" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field" />
+        </div>
+
+        <!--Creates required email textbox. Uses type="email" instead of "text" so that it requires the @ sign in the entry too-->
+        <div>
+            <label for="Email">Email</label>: <br />
+             <input type="email" name="Email" id="Email" placeholder="Email" required="required" title="Email is a required field" />
+        </div>
+
+        <!--Creates required Address textbox-->
+        <div>
+            <label for="Address">Address</label>: <br />
+             <input type="text" name="Address" id="Address" placeholder="Address" required="required" title="Address is a required field" />
+        </div>
+
+        <!--Creates required State dropdown list-->
+        <div>
+            <label for="State">State</label>: <br />
+            <select name="State" id="State" required="required">
+                <option value="">Please select state</option>
+                <option value="AK">Alaska</option>
+                <option value="CA">California</option>
+                <option value="OR">Oregon</option>
+                <option value="WA">Washington</option>
+            </select>
+        </div>
+
+        <!--Creates a Yes/No option to join the mailing list-->
+        <div>
+            <fieldset>
+                <legend>Would you like to join our mailing list?</legend>
+                <label><input type="radio" name="JoinMailingList" value="Yes" /> Yes</label><br />
+                <label><input type="radio" name="JoinMailingList" value="No" /> No</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <input type="submit" />
+        </div>
     </form>
 
      <footer>
