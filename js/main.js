@@ -1,5 +1,10 @@
 //alert('test');
 
+//creates dynamic copyright
+let myDate = new Date();
+let myYear = myDate.getFullYear();
+document.getElementById("copyright").innerHTML = myYear;
+
 //https://tinyurl.com/dynamic-html-checker
 document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
 
