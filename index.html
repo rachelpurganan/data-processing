@@ -21,74 +21,75 @@
      </header>
      
    <main class="wrapper">
-       <div id="output">Output goes here</div>
-    <form method="get" action="" class="main-form">
-        <!--Creates required First Name textbox. The autofocus places the cursor/line onto this box right when the user opens this page-->
-        <div>
-            <label for="FirstName">First Name</label>: <br />
-             <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" title="First Name is a required field" autofocus />
-        </div>
+       <div id="output">
+        <form method="get" action="" class="main-form">
+            <!--Creates required First Name textbox. The autofocus places the cursor/line onto this box right when the user opens this page-->
+            <div>
+                <label for="FirstName">First Name</label>: <br />
+                <input type="text" name="First_Name" id="FirstName" placeholder="First Name" required="required" title="First Name is a required field" autofocus />
+            </div>
 
-        <!--Creates required Last Name textbox-->
-        <div>
-            <label for="LastName">Last Name</label>: <br />
-             <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field" />
-        </div>
+            <!--Creates required Last Name textbox-->
+            <div>
+                <label for="LastName">Last Name</label>: <br />
+                <input type="text" name="Last_Name" id="LastName" placeholder="Last Name" required="required" title="Last Name is a required field" />
+            </div>
 
-        <!--Creates required email textbox. Uses type="email" instead of "text" so that it requires the @ sign in the entry too-->
-        <div>
-            <label for="Email">Email</label>: <br />
-             <input type="email" name="Email" id="Email" placeholder="Email" required="required" title="Email is a required field" />
-        </div>
+            <!--Creates required email textbox. Uses type="email" instead of "text" so that it requires the @ sign in the entry too-->
+            <div>
+                <label for="Email">Email</label>: <br />
+                <input type="email" name="Email" id="Email" placeholder="Email" required="required" title="Email is a required field" />
+            </div>
 
-        <!--Creates required Address textbox-->
-        <div>
-            <label for="Address">Address</label>: <br />
-             <input type="text" name="Address" id="Address" placeholder="Address" required="required" title="Address is a required field" />
-        </div>
+            <!--Creates required Address textbox-->
+            <div>
+                <label for="Address">Address</label>: <br />
+                <input type="text" name="Address" id="Address" placeholder="Address" required="required" title="Address is a required field" />
+            </div>
 
-        <!--Creates required State dropdown list-->
-        <div>
-            <label for="State">State</label>: <br />
-            <select name="State" id="State" required="required">
-                <option value="">Please select state</option>
-                <option value="AK">Alaska</option>
-                <option value="CA">California</option>
-                <option value="OR">Oregon</option>
-                <option value="WA">Washington</option>
-            </select>
-        </div>
+            <!--Creates required State dropdown list-->
+            <div>
+                <label for="State">State</label>: <br />
+                <select name="State" id="State" required="required">
+                    <option value="">Please select state</option>
+                    <option value="AK">Alaska</option>
+                    <option value="CA">California</option>
+                    <option value="OR">Oregon</option>
+                    <option value="WA">Washington</option>
+                </select>
+            </div>
 
-        <!--Creates a Yes/No option to join the mailing list. These are radio buttons, where you can only choose one option.-->
-        <div>
-            <fieldset>
-                <legend>Would you like to join our mailing list?</legend>
-                <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required" /> Yes</label><br />
-                <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
-            </fieldset>
-        </div>
+            <!--Creates a Yes/No option to join the mailing list. These are radio buttons, where you can only choose one option.-->
+            <div>
+                <fieldset>
+                    <legend>Would you like to join our mailing list?</legend>
+                    <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required" /> Yes</label><br />
+                    <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
+                </fieldset>
+            </div>
 
-        <!--Creates "Interested In?" question. These are checkboxes, where you can select more than one option.-->
-        <div>
-            <fieldset>
-                <legend>Interested In?</legend>
-                <label><input type="checkbox" name="Interested_In" value="Website" /> Website</label><br />
-                <label><input type="checkbox" name="Interested_In" value="Online Calendar" /> Online Calendar</label><br />
-                <label><input type="checkbox" name="Interested_In" value="Contact Form" /> Contact Form</label><br />
-                <label><input type="checkbox" name="Interested_In" value="Lollipops" /> Complimentary Lollipops</label>
-                
-            </fieldset>
-        </div>
+            <!--Creates "Interested In?" question. These are checkboxes, where you can select more than one option.-->
+            <div>
+                <fieldset>
+                    <legend>Interested In?</legend>
+                    <label><input type="checkbox" name="Interested_In" value="Website" /> Website</label><br />
+                    <label><input type="checkbox" name="Interested_In" value="Online Calendar" /> Online Calendar</label><br />
+                    <label><input type="checkbox" name="Interested_In" value="Contact Form" /> Contact Form</label><br />
+                    <label><input type="checkbox" name="Interested_In" value="Lollipops" /> Complimentary Lollipops</label>
+                    
+                </fieldset>
+            </div>
 
-        <div>
-            <label for="Comments">Comments</label>: <br />
-            <textarea name="Comments" cols="36" rows="4" id="Comments"></textarea>
-        </div>
+            <div>
+                <label for="Comments">Comments</label>: <br />
+                <textarea name="Comments" cols="36" rows="4" id="Comments"></textarea>
+            </div>
 
-        <div>
-            <input type="submit" value="Submit it!"/>
-        </div>
-    </form>
+            <div>
+                <input type="submit" value="Submit it!"/>
+            </div>
+        </form>
+    </div>
 
      <footer>
         <p><small>&copy; 2020-<span id="copyright"></span> by Rachel Purganan, All Rights Reserved ~ 
