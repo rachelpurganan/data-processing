@@ -5,6 +5,8 @@ let myData = '';//will store data for output
 let myCart = '';//will store cart details
 let myTotal = 0;//will store total cost
 
+let str = '';
+
 if(queryString!=""){//process data
   
     //separate querystring parameters
@@ -40,12 +42,20 @@ if(queryString!=""){//process data
       
     });
 
+    function titleCase(str){
+      return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join(' ');
+        }
+    
+      console.log(titleCase("these are all undercase"));
+
       myCart = `
         <p><b>Cart Contents</b></p>
         <p>${myCart}</p>
         <p>Total: $${myTotal}</p>
       `;  
       myData = myCart + "<p><b>Shipping Information</b></p>" + myData;
+
+
 
     //creates CLEAR button to clear the data
     myData += `<p><a href="index.html">CLEAR</a></p>`
@@ -55,6 +65,8 @@ if(queryString!=""){//process data
 
 
 };
+
+
     
 //output to console    
 //console.log(queryString);

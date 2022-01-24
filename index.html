@@ -74,6 +74,12 @@
                 <input type="text" name="Address" id="Address" placeholder="Address" required="required" title="Address is a required field" />
             </div>
 
+            <!--Creates required City textbox-->
+            <div>
+                <label for="City">City</label>: <br />
+                <input type="text" name="City" id="City" placeholder="City" required="required" title="City is a required field" />
+            </div>
+
             <!--Creates required State dropdown list-->
             <div>
                 <label for="State">State</label>: <br />
@@ -86,30 +92,15 @@
                 </select>
             </div>
 
-            <!--Creates a Yes/No option to join the mailing list. These are radio buttons, where you can only choose one option.-->
+            <!--Creates required Postal Code textbox-->
             <div>
-                <fieldset>
-                    <legend>Would you like to join our mailing list?</legend>
-                    <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required" /> Yes</label><br />
-                    <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
-                </fieldset>
-            </div>
-
-            <!--Creates "Interested In?" question. These are checkboxes, where you can select more than one option.-->
-            <div>
-                <fieldset>
-                    <legend>Interested In?</legend>
-                    <label><input type="checkbox" name="Interested_In" value="Website" /> Website</label><br />
-                    <label><input type="checkbox" name="Interested_In" value="Online Calendar" /> Online Calendar</label><br />
-                    <label><input type="checkbox" name="Interested_In" value="Contact Form" /> Contact Form</label><br />
-                    <label><input type="checkbox" name="Interested_In" value="Lollipops" /> Complimentary Lollipops</label>
-                    
-                </fieldset>
+                <label for="PostalCode">Postal Code</label>: <br />
+                <input type="text" name="Postal_Code" id="PostalCode" placeholder="Postal Code" required="required" title="Postal Code is a required field" />
             </div>
 
             <div>
-                <label for="Comments">Comments</label>: <br />
-                <textarea name="Comments" cols="36" rows="4" id="Comments"></textarea>
+                <label for="Note">Note</label>: <br />
+                <textarea name="Note" cols="36" rows="4" id="Note"></textarea>
             </div>
 
             <div>
