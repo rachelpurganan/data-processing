@@ -5,7 +5,14 @@ let myData = '';//will store data for output
 let myCart = '';//will store cart details
 let myTotal = 0;//will store total cost
 
-let str = '';
+function titleCase(str){
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(' ');
+};
+
 
 if(queryString!=""){//process data
   
@@ -38,15 +45,13 @@ if(queryString!=""){//process data
         //this will replace underscore with spaces
         key = key.split("_").join(" ");
         myData += `<p>${key}: ${value}</p>`;
+
+       console.log(titleCase(`${value}`));
+       
       }
       
     });
 
-    function titleCase(str){
-      return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.substr(1).toLowerCase()).join(' ');
-        }
-    
-      console.log(titleCase("these are all undercase"));
 
       myCart = `
         <p><b>Cart Contents</b></p>
@@ -67,7 +72,7 @@ if(queryString!=""){//process data
 };
 
 
-    
+
 //output to console    
 //console.log(queryString);
 //console.log(value, key);
