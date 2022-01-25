@@ -1,10 +1,3 @@
-//use location object to access querystring (address bar)
-const queryString = window.location.search;
-let myData = '';//will store data for output
-
-let myCart = '';//will store cart details
-let myTotal = 0;//will store total cost
-
 function titleCase(str){
   str = str.toLowerCase().split(' ');
   for (var i = 0; i < str.length; i++) {
@@ -13,6 +6,14 @@ function titleCase(str){
   return str.join(' ');
 };
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+let myData = '';//will store data for output
+
+let myCart = '';//will store cart details
+let myTotal = 0;//will store total cost
+
+var titleCaseFirstName, titleCaseLastName, titleCaseAddress, titleCaseCity = '';
 
 if(queryString!=""){//process data
   
@@ -43,11 +44,19 @@ if(queryString!=""){//process data
         }
       }else{//build shipping info
         //this will replace underscore with spaces
+        switch(key){
+          case "First_Name":
+          case "Last_Name":
+          case "Address":
+          case "City":
+            value = titleCase(value);
+          break;
+        }
+        
         key = key.split("_").join(" ");
         myData += `<p>${key}: ${value}</p>`;
 
-       console.log(titleCase(`${value}`));
-       
+
       }
       
     });
